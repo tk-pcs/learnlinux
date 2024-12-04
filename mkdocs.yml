@@ -17,15 +17,15 @@ theme:
   palette:
     # Palette toggle for light mode
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     # Palette toggle for dark mode
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -68,44 +68,117 @@ nav:
     - Course Structure: overview/structure.md
   - Modules:
     - "Module 1: Command Line Basics":
-      - modules/01-command-line-basics/index.md
+      - Overview: modules/01-command-line-basics/index.md
       - Introduction: modules/01-command-line-basics/01-introduction.md
       - Terminal Basics: modules/01-command-line-basics/02-terminal.md
       - Shell Basics: modules/01-command-line-basics/03-shell-basics.md
       - Navigation: modules/01-command-line-basics/04-navigation.md
       - Exercises: 
-        - modules/01-command-line-basics/exercises/index.md
+        - Overview: modules/01-command-line-basics/exercises/index.md
         - Basic Commands: modules/01-command-line-basics/exercises/basic-commands.md
         - Shell Navigation: modules/01-command-line-basics/exercises/shell-navigation.md
       - Labs:
         - Lab 1: modules/01-command-line-basics/labs/lab1-shell-basics.md
         - Lab 2: modules/01-command-line-basics/labs/lab2-navigation.md
-    
+
     - "Module 2: File System Navigation":
-      - modules/02-file-system/index.md
+      - Overview: modules/02-file-system/index.md
       - File System Hierarchy: modules/02-file-system/01-filesystem-hierarchy.md
       - File Types: modules/02-file-system/02-file-types.md
       - File Operations: modules/02-file-system/03-file-operations.md
       - Permissions: modules/02-file-system/04-permissions.md
-      # Continue with exercises and labs...
+      - Exercises:
+        - Overview: modules/02-file-system/exercises/index.md
+        - File Management: modules/02-file-system/exercises/file-management.md
+        - Permission Control: modules/02-file-system/exercises/permission-control.md
+        - Links and Inodes: modules/02-file-system/exercises/links-inodes.md
+      - Labs:
+        - "Lab 1: File Operations": modules/02-file-system/labs/lab1-file-operations.md
+        - "Lab 2: Permissions": modules/02-file-system/labs/lab2-permissions.md
+        - "Lab 3: System Navigation": modules/02-file-system/labs/lab3-system-navigation.md
 
-    # Continue with other modules...
+    - "Module 3: Text Processing":
+      - Overview: modules/03-text-processing/index.md
+      - Text Editors: modules/03-text-processing/01-editors.md
+      - Basic Operations: modules/03-text-processing/02-basic-operations.md
+      - Filters: modules/03-text-processing/03-filters.md
+      - Regular Expressions: modules/03-text-processing/04-regex.md
+      - Exercises:
+        - Overview: modules/03-text-processing/exercises/index.md
+        - Vim Basics: modules/03-text-processing/exercises/vim-basics.md
+        - Text Manipulation: modules/03-text-processing/exercises/text-manipulation.md
+        - Regex Practice: modules/03-text-processing/exercises/regex-practice.md
+      - Labs:
+        - "Lab 1: Editor Mastery": modules/03-text-processing/labs/lab1-editor-mastery.md
+        - "Lab 2: Text Processing": modules/03-text-processing/labs/lab2-text-processing.md
+        - "Lab 3: Advanced Patterns": modules/03-text-processing/labs/lab3-advanced-patterns.md
+
+    - "Module 4: Advanced Command Line":
+      - Overview: modules/04-advanced-cli/index.md
+      - Piping and Redirection: modules/04-advanced-cli/01-piping-redirection.md
+      - Process Management: modules/04-advanced-cli/02-process-management.md
+      - Job Control: modules/04-advanced-cli/03-job-control.md
+      - Shell Customization: modules/04-advanced-cli/04-shell-customization.md
+      - Exercises:
+        - Overview: modules/04-advanced-cli/exercises/index.md
+        - Pipeline Building: modules/04-advanced-cli/exercises/pipeline-building.md
+        - Process Control: modules/04-advanced-cli/exercises/process-control.md
+        - Shell Configuration: modules/04-advanced-cli/exercises/shell-config.md
+      - Labs:
+        - "Lab 1: Advanced Pipeline": modules/04-advanced-cli/labs/lab1-advanced-pipeline.md
+        - "Lab 2: Process Management": modules/04-advanced-cli/labs/lab2-process-management.md
+        - "Lab 3: Shell Customization": modules/04-advanced-cli/labs/lab3-shell-customization.md
+
+    - "Module 5: System Administration":
+      - Overview: modules/05-system-admin/index.md
+      - User Management: modules/05-system-admin/01-user-management.md
+      - Package Management: modules/05-system-admin/02-package-management.md
+      - Service Management: modules/05-system-admin/03-service-management.md
+      - System Monitoring: modules/05-system-admin/04-system-monitoring.md
+      - Exercises:
+        - Overview: modules/05-system-admin/exercises/index.md
+        - User Administration: modules/05-system-admin/exercises/user-admin.md
+        - Package Operations: modules/05-system-admin/exercises/package-ops.md
+        - Service Control: modules/05-system-admin/exercises/service-control.md
+      - Labs:
+        - "Lab 1: User Management": modules/05-system-admin/labs/lab1-user-management.md
+        - "Lab 2: System Services": modules/05-system-admin/labs/lab2-system-services.md
+        - "Lab 3: System Maintenance": modules/05-system-admin/labs/lab3-system-maintenance.md
+
+    - "Module 6: Networking":
+      - Overview: modules/06-networking/index.md
+      - Network Basics: modules/06-networking/01-network-basics.md
+      - Network Configuration: modules/06-networking/02-network-config.md
+      - Remote Access: modules/06-networking/03-remote-access.md
+      - Network Tools: modules/06-networking/04-network-tools.md
+      - Exercises:
+        - Overview: modules/06-networking/exercises/index.md
+        - Network Configuration: modules/06-networking/exercises/network-config.md
+        - Remote Access: modules/06-networking/exercises/remote-access.md
+        - Troubleshooting: modules/06-networking/exercises/troubleshooting.md
+      - Labs:
+        - "Lab 1: Network Setup": modules/06-networking/labs/lab1-network-setup.md
+        - "Lab 2: Remote Management": modules/06-networking/labs/lab2-remote-management.md
+        - "Lab 3: Network Analysis": modules/06-networking/labs/lab3-network-analysis.md
+
+    - "Module 7: Advanced Topics":
+      - Overview: modules/07-advanced-topics/index.md
+      - Shell Scripting: modules/07-advanced-topics/01-shell-scripting.md
+      - Security Basics: modules/07-advanced-topics/02-security-basics.md
+      - Performance Tuning: modules/07-advanced-topics/03-performance-tuning.md
+      - Advanced Tools: modules/07-advanced-topics/04-advanced-tools.md
+      - Exercises:
+        - Overview: modules/07-advanced-topics/exercises/index.md
+        - Script Development: modules/07-advanced-topics/exercises/script-development.md
+        - Security Hardening: modules/07-advanced-topics/exercises/security-hardening.md
+        - Performance Analysis: modules/07-advanced-topics/exercises/performance-analysis.md
+      - Labs:
+        - "Lab 1: Automation": modules/07-advanced-topics/labs/lab1-automation.md
+        - "Lab 2: Security Implementation": modules/07-advanced-topics/labs/lab2-security-implementation.md
+        - "Lab 3: Performance Optimization": modules/07-advanced-topics/labs/lab3-performance-optimization.md
 
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: # Your repo URL here
   generator: false
-  analytics:
-    provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
-  consent:
-    title: Cookie consent
-    description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
 
 extra_css:
   - stylesheets/extra.css
