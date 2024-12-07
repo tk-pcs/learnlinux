@@ -37,6 +37,11 @@ markdown_extensions:
   - def_list
   - toc:
       permalink: true
+  - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
 
 plugins:
   - search
@@ -47,6 +52,7 @@ nav:
     - Introduction: overview/introduction.md
     - Prerequisites: overview/prerequisites.md
     - Course Structure: overview/structure.md
+    - GitCommit Standards: overview/gitcommit.md
   - Modules:
     - "Module 1: Command Line Basics":
       - Overview: modules/01-command-line-basics/index.md
